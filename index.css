@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .navbar-brand i {
+  color: #34a22c;
+}
+
+a.navbar-brand {
+  color: white;
+  font-size: 2rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+  transition: 0.3s;
+  position: relative;
+  margin: 0 10px;
+  overflow: hidden;
+}
+.navbar-nav .active > .nav-link {
+  color: #34a22c;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #34a22c;
+}
+.navbar-expand-lg .navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  transform: translateX(-100px);
+  background: #34a22c;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+  transform: translateX(0px);
+}
+.navbar-nav .active > .nav-link::before {
+  transform: translateX(0px);
+}
+.carousel-item {
+  height: 100vh;
+}
+.carousel-item img {
+  height: 100%;
+}
+.user-carousel {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background: #35a22c;
+  background-clip: padding-box;
+}
+.carousel-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.projects .nav {
+  width: 100%;
+  justify-content: center;
+}
+.projects .nav-pills .nav-link.active {
+  background: #35a22c;
+  color: white;
+}
+.projects .nav-pills .nav-link {
+  color: black;
+  border: 1px solid;
+  margin: 0 10px;
+}
+.item__project {
+  padding: 15px;
+  height: 500px;
+}
+.container__item {
+  width: 100%;
+  height: 100%;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.container__item img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.projects .titile__item {
+  text-align: center;
+  padding-top: 15px;
+}
+.projects .titile__item h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.feature {
+  width: 100%;
+  height: 650px;
+  background-image: url(./image/3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.feature::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title__feature {
+  color: white;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 60px 80px;
+}
+.title__feature p {
+  padding: 0 100px;
+}
+.item__feature {
+  height: 300px;
+  padding: 15px;
+}
+.item__content {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+}
+.item__content i {
+  color: #35a22c;
+  font-size: 40px;
+  padding: 10px;
+  position: relative;
+  z-index: 2;
+}
+.item__content h2 {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.item__content p {
+  color: white;
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+}
+.award {
+  background-image: url(./image/memphis_3.png);
+  height: 400px;
+  width: 100%;
+}
+.award .item__award {
+  background: red;
+}
